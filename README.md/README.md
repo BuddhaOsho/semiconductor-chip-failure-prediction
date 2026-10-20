@@ -1,4 +1,4 @@
-# Semiconductor Chip Failure Prediction
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/8511e37b-d617-46f3-a947-0046a87e2dec" /># Semiconductor Chip Failure Prediction
 
 ## Problem Statement
 
@@ -7,45 +7,53 @@ and testing parameters.
 
 ## Project Architecture
 
-┌─────────────────────────┐
-│ Semiconductor Chip Data │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│        Data EDA         │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│ Data Preprocessing      │
-│ • Missing Value Handling│
-│ • Feature Engineering   │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│ ColumnTransformer       │
-│ • Numerical Pipeline    │
-│ • Ordinal Pipeline      │
-│ • Nominal Pipeline      │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│ Logistic Regression     │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│ Prediction Model        │
-│ best_model.pkl               │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│ Streamlit Application   │
-└─────────────────────────┘
+```text
+┌──────────────────────────────┐
+│     Semiconductor Chip Data  │
+└──────────────┬───────────────┘
+               ▼
+┌──────────────────────────────┐
+│           Data EDA           │
+└──────────────┬───────────────┘
+               ▼
+┌──────────────────────────────┐
+│      Data Preprocessing      │
+│  • Missing Value Handling    │
+│  • Feature Engineering       │
+└──────────────┬───────────────┘
+               ▼
+┌──────────────────────────────┐
+│       ColumnTransformer      │
+│  • Numerical Pipeline        │
+│  • Ordinal Pipeline          │
+│  • Nominal Pipeline          │
+└──────────────┬───────────────┘
+               ▼
+┌──────────────────────────────┐
+│      Logistic Regression     │
+└──────────────┬───────────────┘
+               ▼
+┌──────────────────────────────┐
+│       Prediction Model       │
+│         best_model.pkl       │
+└──────────────┬───────────────┘
+               ▼
+┌──────────────────────────────┐
+│     Streamlit Application    │
+└──────────────────────────────┘
+```
+
+## Machine Learning Workflow
+
+1. **Data EDA:** Explore the semiconductor chip dataset using statistical analysis and visualizations.
+2. **Data Preprocessing:** Handle missing values and perform feature engineering.
+3. **Feature Transformation:** Use `ColumnTransformer` to process numerical, ordinal, and nominal features with separate pipelines.
+4. **Model Training:** Train a Logistic Regression classification model.
+5. **Model Serialization:** Save the trained model as `best_model.pkl`.
+6. **Deployment:** Build an interactive web application using Streamlit for semiconductor chip predictions.
+
+
+
 
 
 
