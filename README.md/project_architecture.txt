@@ -1,0 +1,40 @@
+┌─────────────────────────┐
+│ Semiconductor Chip Data │
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│        Data EDA         │
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│ Data Preprocessing      │
+│ • Missing Value Handling│
+│ • Feature Engineering   │
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│ ColumnTransformer       │
+│ • Numerical Pipeline    │
+│ • Ordinal Pipeline      │
+│ • Nominal Pipeline      │
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│ Logistic Regression     │
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│ Prediction Model        │
+│ model.pkl               │
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│ Streamlit Application   │
+└─────────────────────────┘
+
